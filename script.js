@@ -73,21 +73,21 @@ const cpuSelect = () => {
 const result = () => {
   //batu
   if ((playerChoice === 'batu') & (cpuChoice === 'gunting')) {
-    document.querySelector('.vs').innerText = 'kamu menang';
+    document.querySelector('.vs').innerText = 'player 1 win';
     resultText.classList.add('win');
   }
   if ((playerChoice === 'batu') & (cpuChoice === 'kertas')) {
-    document.querySelector('.vs').innerText = 'kamu kalah';
+    document.querySelector('.vs').innerText = 'com win';
     resultText.classList.add('lose');
   }
 
   //gunting
   if ((playerChoice === 'gunting') & (cpuChoice === 'kertas')) {
-    document.querySelector('.vs').innerText = 'kamu menang';
+    document.querySelector('.vs').innerText = 'player 1 win';
     resultText.classList.add('win');
   }
   if ((playerChoice === 'gunting') & (cpuChoice === 'batu')) {
-    document.querySelector('.vs').innerText = 'kamu kalah';
+    document.querySelector('.vs').innerText = 'com win';
     resultText.classList.add('lose');
   }
 
@@ -103,7 +103,7 @@ const result = () => {
 
   //tie
   if (playerChoice === cpuChoice) {
-    document.querySelector('.vs').innerText = 'tie';
+    document.querySelector('.vs').innerText = 'draw';
     resultText.classList.add('tie');
   }
 };
